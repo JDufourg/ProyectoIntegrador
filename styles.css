@@ -27,26 +27,28 @@
 .col-12 {width: 100%;}
 
 .header {
-    border: solid black;
+    border: 1px solid black;
     color:black;
 }
 
 
 .barraDeNavegacion {
+    border:1px solid black;
     color:blue;
 }
 
 .titulo {
-    color:solid black;
-    border: 1px;
+    
+    border: 1px solid black;
 }
 
-.body {
+body {
     float: right;
-    border: 1px;
-    color: solid black;
+    border: 1px solid black;
+    padding-top: 60px;
 }
 
 .contenido{
     background-color: bisque;
+    border:1px solid black;
 }
