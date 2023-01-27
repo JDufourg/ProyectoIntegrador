@@ -26,29 +26,12 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-.header {
-    border: 1px solid black;
-    color:black;
-}
-
-
-.barraDeNavegacion {
-    border:1px solid black;
-    color:blue;
-}
-
-.titulo {
-    
-    border: 1px solid black;
-}
-
 body {
     float: right;
-    border: 1px solid black;
     padding-top: 60px;
 }
 
-.contenido{
-    background-color: bisque;
-    border:1px solid black;
+footer{
+    background-color: #2535db;
 }
+
