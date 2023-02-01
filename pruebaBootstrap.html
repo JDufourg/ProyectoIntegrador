@@ -22,8 +22,6 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#scrollspyPresentacion">Presentación</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#scrollspyDatosPersonales">Datos Personales</a></li>
-              <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#scrollspyEstudios">Estudios</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#scrollspyExperiencia">Experiencia</a></li>
@@ -38,25 +36,46 @@
           </li>
         </ul>
       </nav>
+  <!--Contenido del cv-->
 
-      <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <h4 id="scrollspyPresentacion">Presentación</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo nibh vitae faucibus venenatis. Vivamus commodo interdum ipsum, et luctus libero accumsan vel. Nullam aliquet lacus elit, at tempor nulla sollicitudin vel. Integer ut metus condimentum, euismod mauris sed, interdum nunc. Quisque enim mauris, hendrerit eu magna vel, mollis facilisis ex. Nam in tincidunt velit, accumsan porta sem. Cras at molestie elit. Nunc vestibulum risus et metus rhoncus, sit amet commodo tellus eleifend. Sed consectetur metus mauris, sit amet placerat felis tempus nec. Vestibulum quis sem imperdiet diam tincidunt condimentum. Donec bibendum magna vitae ligula efficitur, quis lobortis ante sagittis. Donec tincidunt ligula in neque scelerisque, quis rutrum nulla ullamcorper. Duis sagittis lacus a elementum commodo. In fringilla vehicula felis ac vestibulum. </p>
-        <h4 id="scrollspyDatosPersonales">Datos Personales</h4>
-        <p>Quisque aliquet tincidunt elit, eget egestas neque placerat malesuada. Etiam a luctus lectus, rutrum tempor quam. Suspendisse blandit mollis pellentesque. Nullam dignissim, est nec congue pellentesque, quam quam aliquam elit, a eleifend lorem arcu id leo. Integer suscipit mauris et metus sagittis, eget fringilla nisl pretium. In consectetur risus ac velit ultricies tincidunt vel eget neque. Maecenas commodo, urna eget maximus consequat, diam enim sodales ante, ac gravida neque massa volutpat lorem. Duis auctor leo dolor, elementum porttitor est interdum at. Suspendisse sit amet faucibus dui. Nulla facilisi. Nam ex metus, mattis quis consectetur eu, ultricies id lorem. Integer vel dolor velit. </p>
-        <h4 id="scrollspyEstudios">Estudios</h4>
-        <p>Suspendisse potenti. Ut tristique pharetra consectetur. Pellentesque pulvinar tellus ante, ac auctor risus bibendum accumsan. Aenean pellentesque nibh sit amet pharetra vestibulum. Sed orci nisl, interdum eu aliquam a, finibus vitae eros. Integer feugiat lectus sem, ac ornare nisi auctor molestie. Ut faucibus tincidunt metus, vel eleifend nibh varius ut. Morbi bibendum sagittis odio, at lobortis turpis mattis vitae. </p>
-        <h4 id="scrollspyExperiencia">Experiencia</h4>
-        <p>Donec sed suscipit tortor. Duis et massa vestibulum, pulvinar purus eu, dictum libero. In venenatis ipsum velit, quis facilisis metus mollis nec. Quisque in lorem nisl. Sed et cursus erat. Quisque ut lorem augue. Cras mauris ligula, cursus sed accumsan non, lobortis vulputate massa. Nullam aliquet bibendum consectetur. Quisque fermentum orci eget urna suscipit bibendum. Maecenas placerat vestibulum ultrices. </p>
-        <h4 id="scrollspyHabilidades">Habilidades</h4>
-        <p>Mauris sagittis dui a mauris lacinia molestie. Proin laoreet arcu vel fermentum sagittis. Praesent ultrices luctus felis, quis facilisis quam dignissim sed. Proin ultricies lacinia porta. Vivamus ex tellus, posuere non ultrices eget, aliquet sit amet enim. Nulla iaculis facilisis aliquam. Etiam augue felis, interdum id blandit at, efficitur gravida risus. Curabitur ullamcorper auctor tellus in volutpat. Suspendisse vitae dictum neque. Mauris nulla magna, placerat quis lobortis quis, sodales pretium dolor. Praesent est turpis, lacinia sed lorem eget, finibus elementum arcu. Morbi vel lacus magna. </p>
-        <h4 id="scrollspySobreMi">Sobre Mi</h4>
-        <p>Mauris sagittis dui a mauris lacinia molestie. Proin laoreet arcu vel fermentum sagittis. Praesent ultrices luctus felis, quis facilisis quam dignissim sed. Proin ultricies lacinia porta. Vivamus ex tellus, posuere non ultrices eget, aliquet sit amet enim. Nulla iaculis facilisis aliquam. Etiam augue felis, interdum id blandit at, efficitur gravida risus. Curabitur ullamcorper auctor tellus in volutpat. Suspendisse vitae dictum neque. Mauris nulla magna, placerat quis lobortis quis, sodales pretium dolor. Praesent est turpis, lacinia sed lorem eget, finibus elementum arcu. Morbi vel lacus magna. </p>
-        <h4 id="scrollspyContactame">Contactame</h4>
-        <p>Mauris sagittis dui a mauris lacinia molestie. Proin laoreet arcu vel fermentum sagittis. Praesent ultrices luctus felis, quis facilisis quam dignissim sed. Proin ultricies lacinia porta. Vivamus ex tellus, posuere non ultrices eget, aliquet sit amet enim. Nulla iaculis facilisis aliquam. Etiam augue felis, interdum id blandit at, efficitur gravida risus. Curabitur ullamcorper auctor tellus in volutpat. Suspendisse vitae dictum neque. Mauris nulla magna, placerat quis lobortis quis, sodales pretium dolor. Praesent est turpis, lacinia sed lorem eget, finibus elementum arcu. Morbi vel lacus magna. </p>
-      </div>
+<div class="conteiner">
+    <div class="row">
+      <!-- Barra lateral con informacion personal-->
+        <div id=barraInformacionPersonal class="col-3">
+            <img  src="https://randomuser.me/api/portraits/men/96.jpg" class="fotoPerfil img-thumbnail" alt="Foto de perfil">
+            <ul>Datos personales</ul>
+            <li>Nombre</li>
+            <li>E-mail</li>
+            <li>cumpleaños</li>
+            <li>Direccion</li>
+
+        </div>
+        
+        <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="col-9" class="scrollspy-example" tabindex="0">
+          <h4 id="scrollspyPresentacion">Presentación</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo nibh vitae faucibus venenatis. Vivamus commodo interdum ipsum, et luctus libero accumsan vel. Nullam aliquet lacus elit, at tempor nulla sollicitudin vel. Integer ut metus condimentum, euismod mauris sed, interdum nunc. Quisque enim mauris, hendrerit eu magna vel, mollis facilisis ex. Nam in tincidunt velit, accumsan porta sem. Cras at molestie elit. Nunc vestibulum risus et metus rhoncus, sit amet commodo tellus eleifend. Sed consectetur metus mauris, sit amet placerat felis tempus nec. Vestibulum quis sem imperdiet diam tincidunt condimentum. Donec bibendum magna vitae ligula efficitur, quis lobortis ante sagittis. Donec tincidunt ligula in neque scelerisque, quis rutrum nulla ullamcorper. Duis sagittis lacus a elementum commodo. In fringilla vehicula felis ac vestibulum. </p>
+          <h4 id="scrollspyEstudios">Estudios</h4>
+          <p>Suspendisse potenti. Ut tristique pharetra consectetur. Pellentesque pulvinar tellus ante, ac auctor risus bibendum accumsan. Aenean pellentesque nibh sit amet pharetra vestibulum. Sed orci nisl, interdum eu aliquam a, finibus vitae eros. Integer feugiat lectus sem, ac ornare nisi auctor molestie. Ut faucibus tincidunt metus, vel eleifend nibh varius ut. Morbi bibendum sagittis odio, at lobortis turpis mattis vitae. </p>
+          <h4 id="scrollspyExperiencia">Experiencia</h4>
+          <p>Donec sed suscipit tortor. Duis et massa vestibulum, pulvinar purus eu, dictum libero. In venenatis ipsum velit, quis facilisis metus mollis nec. Quisque in lorem nisl. Sed et cursus erat. Quisque ut lorem augue. Cras mauris ligula, cursus sed accumsan non, lobortis vulputate massa. Nullam aliquet bibendum consectetur. Quisque fermentum orci eget urna suscipit bibendum. Maecenas placerat vestibulum ultrices. </p>
+          <h4 id="scrollspyHabilidades">Habilidades</h4>
+          <p>Mauris sagittis dui a mauris lacinia molestie. Proin laoreet arcu vel fermentum sagittis. Praesent ultrices luctus felis, quis facilisis quam dignissim sed. Proin ultricies lacinia porta. Vivamus ex tellus, posuere non ultrices eget, aliquet sit amet enim. Nulla iaculis facilisis aliquam. Etiam augue felis, interdum id blandit at, efficitur gravida risus. Curabitur ullamcorper auctor tellus in volutpat. Suspendisse vitae dictum neque. Mauris nulla magna, placerat quis lobortis quis, sodales pretium dolor. Praesent est turpis, lacinia sed lorem eget, finibus elementum arcu. Morbi vel lacus magna. </p>
+          <h4 id="scrollspySobreMi">Sobre Mi</h4>
+          <p>Mauris sagittis dui a mauris lacinia molestie. Proin laoreet arcu vel fermentum sagittis. Praesent ultrices luctus felis, quis facilisis quam dignissim sed. Proin ultricies lacinia porta. Vivamus ex tellus, posuere non ultrices eget, aliquet sit amet enim. Nulla iaculis facilisis aliquam. Etiam augue felis, interdum id blandit at, efficitur gravida risus. Curabitur ullamcorper auctor tellus in volutpat. Suspendisse vitae dictum neque. Mauris nulla magna, placerat quis lobortis quis, sodales pretium dolor. Praesent est turpis, lacinia sed lorem eget, finibus elementum arcu. Morbi vel lacus magna. </p>
+          <h4 id="scrollspyContactame">Contactame</h4>
+          <p>Mauris sagittis dui a mauris lacinia molestie. Proin laoreet arcu vel fermentum sagittis. Praesent ultrices luctus felis, quis facilisis quam dignissim sed. Proin ultricies lacinia porta. Vivamus ex tellus, posuere non ultrices eget, aliquet sit amet enim. Nulla iaculis facilisis aliquam. Etiam augue felis, interdum id blandit at, efficitur gravida risus. Curabitur ullamcorper auctor tellus in volutpat. Suspendisse vitae dictum neque. Mauris nulla magna, placerat quis lobortis quis, sodales pretium dolor. Praesent est turpis, lacinia sed lorem eget, finibus elementum arcu. Morbi vel lacus magna. </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
       <script src="js/bootstrap.min.js"></script>
-</body>
+
+    </body>
 
 <footer>
  <h4><ul>Sigueme tambien en:</ul></h4>

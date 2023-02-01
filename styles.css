@@ -29,9 +29,18 @@
 body {
     float: right;
     padding-top: 60px;
+    padding-inline: 60px;
 }
 
+h4{
+  padding-top: 60px;
+}
 footer{
     background-color: #2535db;
 }
 
+.fotoPerfil{
+  max-width: 100%;
+  width: 1500px;
+  border-radius: 50%;
+}
