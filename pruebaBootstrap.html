@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="styles.css">
         <title>Curriculum vitae</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
     </head>
 <body>
   <!--Definición y personalización de la navbar que provee bootstrap-->
@@ -63,7 +64,34 @@
           <h4 id="scrollspySobreMi">Sobre Mi</h4>
           <p>Mauris sagittis dui a mauris lacinia molestie. Proin laoreet arcu vel fermentum sagittis. Praesent ultrices luctus felis, quis facilisis quam dignissim sed. Proin ultricies lacinia porta. Vivamus ex tellus, posuere non ultrices eget, aliquet sit amet enim. Nulla iaculis facilisis aliquam. Etiam augue felis, interdum id blandit at, efficitur gravida risus. Curabitur ullamcorper auctor tellus in volutpat. Suspendisse vitae dictum neque. Mauris nulla magna, placerat quis lobortis quis, sodales pretium dolor. Praesent est turpis, lacinia sed lorem eget, finibus elementum arcu. Morbi vel lacus magna. </p>
           <h4 id="scrollspyContactame">Contactame</h4>
-          <p>Mauris sagittis dui a mauris lacinia molestie. Proin laoreet arcu vel fermentum sagittis. Praesent ultrices luctus felis, quis facilisis quam dignissim sed. Proin ultricies lacinia porta. Vivamus ex tellus, posuere non ultrices eget, aliquet sit amet enim. Nulla iaculis facilisis aliquam. Etiam augue felis, interdum id blandit at, efficitur gravida risus. Curabitur ullamcorper auctor tellus in volutpat. Suspendisse vitae dictum neque. Mauris nulla magna, placerat quis lobortis quis, sodales pretium dolor. Praesent est turpis, lacinia sed lorem eget, finibus elementum arcu. Morbi vel lacus magna. </p>
+          <p>¿Puedo ayudarte con algo? Dejame tu mensaje y vemos que podemos hacer.</p>
+          <form action="/form" method="post">
+            <ul>
+             <li>
+                 <label for="name">Nombre:</label>
+                 <input type="text" name="user_name" id="name" required placeholder="(requerido)">
+             </li>
+             <li>
+                 <label for="last_name">Apellido:</label>
+                 <input type="text" name="user_last_name" id="last_name" required placeholder="(requerido)">
+             </li>
+             <li>
+                 <label for="email">E-mail:</label>
+                 <input type="email" name="user_email" id="email" required placeholder="example@email.com">
+             </li>
+             <li>
+                 <label for="cellphone_number">Telefono:</label>
+                 <input type="number" name="user_cellphone_number" id="cellphone_number" placeholder="(opcional)">
+             </li>
+             <li>
+                 <label for="msg">Mensaje:</label>
+                 <textarea name="user_message" id="msg" cols="50" rows="8" placeholder="Escriba su mensaje." required></textarea>
+             </li>
+             <li class="button">
+                 <button type="submit">Enviar</button>
+             </li>
+            </ul> 
+         </form>
         </div>
     </div>
 </div>
