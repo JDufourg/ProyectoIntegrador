@@ -59,3 +59,7 @@ footer{
   width: 1500px;
   border-radius: 50%;
 }
+
+textarea{
+  resize: none;
+}
