@@ -36,6 +36,7 @@ body {
 h4{
   padding-top: 60px;
 }
+
 footer{
     background-color: #2535db;
 }
@@ -48,6 +49,13 @@ footer{
 .barraLateral{
   background-color:#73b8bf ;
   padding-top: 60px;
+}
+
+.barraLateralContenido{
+  display:table;
+  justify-content: center;
+  font-size: large;
+  font-weight: bolder;
 }
 
 .contenido{

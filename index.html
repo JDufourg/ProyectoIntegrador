@@ -1,65 +1,115 @@
+<!--Vamos a hacer una prueba de como funcionaria la navbar de bootstrap-->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Curriculum vitae</title>
-</head>
-
-
-
-<body>
-    <div class="header">
-        <div>
-            <h1 class= titulo">Mi Nombre</h1>
-    </div>
-    <div class="row">
-        
-        <div class="col-3 barraDeNavegacion" >
-            <nav>
-                <ul>Barra de navegación</ul>
-                    <li id="navPresentacion">Presentación</li>
-                    <li id="navDatosPersonales">Datos Personales</li>
-                    <li id="navEstudios">Estudios</li>
-                    <li id="navExperiencia">Experiencia</li>
-                    <li id="navHabilidades">Habilidades</li>
-                    <li id="navSobreMi">Sobre Mi</li>
-                    <li id="navContacto">Contacto</li>
-            </nav>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <title>Curriculum vitae</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
+    </head>
     
+<body>
+  <!--Definición y personalización de la navbar que provee bootstrap-->
+    <nav id="navbar" class="navbar fixed-top navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">Juan Pablo Dufourg</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Indice</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyPresentacion">Presentación</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyEstudios">Estudios</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyExperiencia">Experiencia</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyHabilidades">Habilidades</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspySobreMi">Sobre Mi</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyContactame">Contactame</a></li>
+
+            </ul>
+          </li>
+        </ul>
+    </nav>
+
+    <!--Contenido del cv-->
+<div class="conteiner">
+    <div class="row">
+      <!-- Barra lateral con informacion personal-->
+        <div class="barraLateral col-3" id="barraLateral">
+            <img  src="https://randomuser.me/api/portraits/men/96.jpg" class="fotoPerfil img-thumbnail" alt="Foto de perfil">
+            <div class="barraLateralContenido" id="contenidoBarraLateral">
+              <ul>Datos personales</ul>
+              <li>Nombre</li>
+              <li>E-mail</li>
+              <li>cumpleaños</li>
+              <li>Direccion</li>
+              
+              <button type="button" id="botonColorDeFondo">Cambiar color de fondo</button>
+              <button>Cambiar de fuente</button>
+              <span>¿Te gusta el sitio?</span>
+              <button>SI</button>
+              <button>NO</button>
+            </div>
+        </div>
         
-    <div class="col-9 body">
-        <div>
-            <h2>Presentación</h2>
-                <p>Buenas! Mi nombre es Juan Pablo Dufourg, realice este curriculum vitae como parte de un trabajo integrador en Argentina Programa 4.0. Estoy muy contento de que estés visitando mi página, espero que te guste.</p>
-            <h2>Datos Personales</h2>
-            <!-- aca va un formulario o una lista-->
-            <h2>Estudios</h2>
-            <!-- aca va una lista-->
-            <h2>Experiencia</h2>
-            <!-- aca va una lista-->
-            <h2>Habilidades</h2>
-            <!-- aca va una lista-->
-            <h2>Sobre Mi</h2>
-                <p>Estoy aprendiendo programación en Argentina Programa 4.0. También fui a la Universidad Tecnológica Nacional (UTN) donde curse la carrera de Ingeniería en Sistemas de Información. Lamentablemente no pude continuar con la misma, pero allí tuve mi primer acercamiento a los algoritmos y paradigmas de programación.
-                Me apasiona poder charlar con quien necesite mi ayuda y poder brindarle una solución a su problema. Siempre me gustaron los puzzles, y considero el programar como armar uno.
-                Ahora con Argentina Programa pretendo afilar mis conocimientos y poder lanzarme como programador web.
-                Pero no todo es programación, en mis tiempos libres aprendo y estudio filosofía. Estoy formando una familia y tenemos dos gatitas.
-                </p>
-            <h2>Contacto</h2>
-            <p>¿Puedo ayudarte con algo? Dejame tu mensaje y vemos que podemos hacer.</p>
+        <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="contenido col-9" class="scrollspy-example" tabindex="0"  id="contenidoCv">
+          <h4 id="scrollspyPresentacion">Presentación</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo nibh vitae faucibus venenatis. Vivamus commodo interdum ipsum, et luctus libero accumsan vel. Nullam aliquet lacus elit, at tempor nulla sollicitudin vel. Integer ut metus condimentum, euismod mauris sed, interdum nunc. Quisque enim mauris, hendrerit eu magna vel, mollis facilisis ex. Nam in tincidunt velit, accumsan porta sem. Cras at molestie elit. Nunc vestibulum risus et metus rhoncus, sit amet commodo tellus eleifend. Sed consectetur metus mauris, sit amet placerat felis tempus nec. Vestibulum quis sem imperdiet diam tincidunt condimentum. Donec bibendum magna vitae ligula efficitur, quis lobortis ante sagittis. Donec tincidunt ligula in neque scelerisque, quis rutrum nulla ullamcorper. Duis sagittis lacus a elementum commodo. In fringilla vehicula felis ac vestibulum. </p>
+          <h4 id="scrollspyEstudios">Estudios</h4>
+          <p>Suspendisse potenti. Ut tristique pharetra consectetur. Pellentesque pulvinar tellus ante, ac auctor risus bibendum accumsan. Aenean pellentesque nibh sit amet pharetra vestibulum. Sed orci nisl, interdum eu aliquam a, finibus vitae eros. Integer feugiat lectus sem, ac ornare nisi auctor molestie. Ut faucibus tincidunt metus, vel eleifend nibh varius ut. Morbi bibendum sagittis odio, at lobortis turpis mattis vitae. </p>
+          <h4 id="scrollspyExperiencia">Experiencia</h4>
+          <p>Donec sed suscipit tortor. Duis et massa vestibulum, pulvinar purus eu, dictum libero. In venenatis ipsum velit, quis facilisis metus mollis nec. Quisque in lorem nisl. Sed et cursus erat. Quisque ut lorem augue. Cras mauris ligula, cursus sed accumsan non, lobortis vulputate massa. Nullam aliquet bibendum consectetur. Quisque fermentum orci eget urna suscipit bibendum. Maecenas placerat vestibulum ultrices. </p>
+          <h4 id="scrollspyHabilidades">Habilidades</h4>
+          <p>Mauris sagittis dui a mauris lacinia molestie. Proin laoreet arcu vel fermentum sagittis. Praesent ultrices luctus felis, quis facilisis quam dignissim sed. Proin ultricies lacinia porta. Vivamus ex tellus, posuere non ultrices eget, aliquet sit amet enim. Nulla iaculis facilisis aliquam. Etiam augue felis, interdum id blandit at, efficitur gravida risus. Curabitur ullamcorper auctor tellus in volutpat. Suspendisse vitae dictum neque. Mauris nulla magna, placerat quis lobortis quis, sodales pretium dolor. Praesent est turpis, lacinia sed lorem eget, finibus elementum arcu. Morbi vel lacus magna. </p>
+          <h4 id="scrollspySobreMi">Sobre Mi</h4>
+          <p>Mauris sagittis dui a mauris lacinia molestie. Proin laoreet arcu vel fermentum sagittis. Praesent ultrices luctus felis, quis facilisis quam dignissim sed. Proin ultricies lacinia porta. Vivamus ex tellus, posuere non ultrices eget, aliquet sit amet enim. Nulla iaculis facilisis aliquam. Etiam augue felis, interdum id blandit at, efficitur gravida risus. Curabitur ullamcorper auctor tellus in volutpat. Suspendisse vitae dictum neque. Mauris nulla magna, placerat quis lobortis quis, sodales pretium dolor. Praesent est turpis, lacinia sed lorem eget, finibus elementum arcu. Morbi vel lacus magna. </p>
+          <h4 id="scrollspyContactame">Contactame</h4>
+          <p>¿Puedo ayudarte con algo? Dejame tu mensaje y vemos que podemos hacer.</p>
+          <form action="/form" method="post">
+            <ul>
+             <li>
+                 <label for="name">Nombre:</label>
+                 <input type="text" name="user_name" id="name" required placeholder="(requerido)">
+             </li>
+             <li>
+                 <label for="last_name">Apellido:</label>
+                 <input type="text" name="user_last_name" id="last_name" required placeholder="(requerido)">
+             </li>
+             <li>
+                 <label for="email">E-mail:</label>
+                 <input type="email" name="user_email" id="email" required placeholder="example@email.com">
+             </li>
+             <li>
+                 <label for="cellphone_number">Telefono:</label>
+                 <input type="number" name="user_cellphone_number" id="cellphone_number" placeholder="(opcional)">
+             </li>
+             <li>
+                 <label for="msg">Mensaje:</label>
+                 <textarea name="user_message" id="msg" cols="50" rows="8" placeholder="Escriba su mensaje." required></textarea>
+             </li>
+             <li class="button">
+                 <button type="submit">Enviar</button>
+             </li>
+            </ul> 
+         </form>
         </div>
     </div>
-    </div>
-</body>
+</div>
+
+
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/functions.js"></script>
+
+    </body>
 
 <footer>
-    <ul>Sigueme tamebien en:</ul>
-        <li>LinkedIn:</li>
-        <li>Facebook:</li>
+ <h4><ul>Sigueme tambien en:</ul></h4>
+      <li>LinkedIn:</li>
+      <li>Facebook:</li>
 </footer>
 </html>
