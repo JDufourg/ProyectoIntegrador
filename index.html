@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://kit.fontawesome.com/554351da3d.css" crossorigin="anonymous">
         <title>Curriculum vitae</title>
         <link rel="icon" type="image/x-icon" href="/favicon.png">
     </head>
@@ -37,7 +38,7 @@
     </nav>
 
     <!--Contenido del cv-->
-<div class="conteiner">
+<div>
     <div class="row">
       <!-- Barra lateral con informacion personal-->
         <div class="barraLateral col-3" id="barraLateral">
@@ -49,50 +50,67 @@
               <li>cumpleaños</li>
               <li>Direccion</li>
               
-              <button type="button" id="botonColorDeFondo">Cambiar color de fondo</button>
+              <button type="button" id="botonColorDeFondo"><i class="fa-solid fa-wand-magic-sparkles"></i> Cambiar color de fondo</button>
               <p>¿Te gusta el sitio?</p>
-              <button>SI</button>
-              <button>NO</button>
+              <button type="button" id="botonMeGusta"><i class="fa-regular fa-thumbs-up"></i></button>
+              <button type="button" id="botonNoMeGusta"><i class="fa-regular fa-thumbs-down"></i></button>
             </div>
         </div>
         
+         <!--TEXTO-->
         <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="contenido col-9" class="scrollspy-example" tabindex="0"  id="contenidoCv">
           <h4 id="scrollspyPresentacion">Presentación</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo nibh vitae faucibus venenatis. Vivamus commodo interdum ipsum, et luctus libero accumsan vel. Nullam aliquet lacus elit, at tempor nulla sollicitudin vel. Integer ut metus condimentum, euismod mauris sed, interdum nunc. Quisque enim mauris, hendrerit eu magna vel, mollis facilisis ex. Nam in tincidunt velit, accumsan porta sem. Cras at molestie elit. Nunc vestibulum risus et metus rhoncus, sit amet commodo tellus eleifend. Sed consectetur metus mauris, sit amet placerat felis tempus nec. Vestibulum quis sem imperdiet diam tincidunt condimentum. Donec bibendum magna vitae ligula efficitur, quis lobortis ante sagittis. Donec tincidunt ligula in neque scelerisque, quis rutrum nulla ullamcorper. Duis sagittis lacus a elementum commodo. In fringilla vehicula felis ac vestibulum. </p>
           <h4 id="scrollspyEstudios">Estudios</h4>
-          <p>Suspendisse potenti. Ut tristique pharetra consectetur. Pellentesque pulvinar tellus ante, ac auctor risus bibendum accumsan. Aenean pellentesque nibh sit amet pharetra vestibulum. Sed orci nisl, interdum eu aliquam a, finibus vitae eros. Integer feugiat lectus sem, ac ornare nisi auctor molestie. Ut faucibus tincidunt metus, vel eleifend nibh varius ut. Morbi bibendum sagittis odio, at lobortis turpis mattis vitae. </p>
+          <ul>
+            <li>Secundario</li>
+            <li>Universitario</li>
+            <li>Desarrollo front end en ArgentinaPrograma 4.0</li>
+          </ul>
           <h4 id="scrollspyExperiencia">Experiencia</h4>
-          <p>Donec sed suscipit tortor. Duis et massa vestibulum, pulvinar purus eu, dictum libero. In venenatis ipsum velit, quis facilisis metus mollis nec. Quisque in lorem nisl. Sed et cursus erat. Quisque ut lorem augue. Cras mauris ligula, cursus sed accumsan non, lobortis vulputate massa. Nullam aliquet bibendum consectetur. Quisque fermentum orci eget urna suscipit bibendum. Maecenas placerat vestibulum ultrices. </p>
+          <ul>
+            <li>Experiencia Laboral 1</li>
+            <p>descripcion</p>
+
+            <li>Experiencia Laboral 2</li>
+            <p>descripcion</p>
+          
+          
+            <li>Experiencia Laboral 3</li>
+            <p>descripcion</p>
+          </ul>
+
           <h4 id="scrollspyHabilidades">Habilidades</h4>
           <p>Mauris sagittis dui a mauris lacinia molestie. Proin laoreet arcu vel fermentum sagittis. Praesent ultrices luctus felis, quis facilisis quam dignissim sed. Proin ultricies lacinia porta. Vivamus ex tellus, posuere non ultrices eget, aliquet sit amet enim. Nulla iaculis facilisis aliquam. Etiam augue felis, interdum id blandit at, efficitur gravida risus. Curabitur ullamcorper auctor tellus in volutpat. Suspendisse vitae dictum neque. Mauris nulla magna, placerat quis lobortis quis, sodales pretium dolor. Praesent est turpis, lacinia sed lorem eget, finibus elementum arcu. Morbi vel lacus magna. </p>
           <h4 id="scrollspySobreMi">Sobre Mi</h4>
           <p>Mauris sagittis dui a mauris lacinia molestie. Proin laoreet arcu vel fermentum sagittis. Praesent ultrices luctus felis, quis facilisis quam dignissim sed. Proin ultricies lacinia porta. Vivamus ex tellus, posuere non ultrices eget, aliquet sit amet enim. Nulla iaculis facilisis aliquam. Etiam augue felis, interdum id blandit at, efficitur gravida risus. Curabitur ullamcorper auctor tellus in volutpat. Suspendisse vitae dictum neque. Mauris nulla magna, placerat quis lobortis quis, sodales pretium dolor. Praesent est turpis, lacinia sed lorem eget, finibus elementum arcu. Morbi vel lacus magna. </p>
           <h4 id="scrollspyContactame">Contactame</h4>
-          <p>¿Puedo ayudarte con algo? Dejame tu mensaje y vemos que podemos hacer.</p>
+          <p id="contacto">¿Puedo ayudarte con algo? Dejame tu mensaje y vemos que podemos hacer.</p>
+          <!-- FORMULARIO DE CONTACTO-->
           <form action="/form" method="post">
             <ul>
              <li>
-                 <label for="name">Nombre:</label>
-                 <input type="text" name="user_name" id="name" required placeholder="(requerido)">
+                 <label for="name" class="form-label">Nombre:</label>
+                 <input type="text" class="form-control" name="user_name" id="name" required placeholder="(requerido)">
              </li>
              <li>
                  <label for="last_name">Apellido:</label>
-                 <input type="text" name="user_last_name" id="last_name" required placeholder="(requerido)">
+                 <input type="text" class="form-control" name="user_last_name" id="last_name" required placeholder="(requerido)">
              </li>
              <li>
                  <label for="email">E-mail:</label>
-                 <input type="email" name="user_email" id="email" required placeholder="example@email.com">
+                 <input type="email" class="form-control" name="user_email" id="email" required placeholder="example@email.com">
              </li>
              <li>
                  <label for="cellphone_number">Telefono:</label>
-                 <input type="number" name="user_cellphone_number" id="cellphone_number" placeholder="(opcional)">
+                 <input type="number" class="form-control" name="user_cellphone_number" id="cellphone_number" placeholder="(opcional)">
              </li>
              <li>
                  <label for="msg">Mensaje:</label>
-                 <textarea name="user_message" id="msg" cols="50" rows="8" placeholder="Escriba su mensaje." required></textarea>
+                 <textarea name="user_message" class="form-control" id="msg" cols="50" rows="8" placeholder="Escriba su mensaje." required></textarea>
              </li>
              <li class="button">
-                 <button type="submit">Enviar</button>
+                 <button type="submit" class="btn btn-outline-dark">Enviar</button>
              </li>
             </ul> 
          </form>
@@ -100,15 +118,57 @@
     </div>
 </div>
 
+ <!--TOASTS-->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+ <div class="toast" id="meGustaToast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="..." class="rounded me-2" alt="...">
+    <strong class="me-auto">Juan Pablo Dufourg</strong>
+    <small>Ahora</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    ¡Me alegro de que te guste el sitio! Muchas gracias por tu opinion.
+  </div>
+</div>
+</div>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+<div class="toast" id="noMeGustaToast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="..." class="rounded me-2" alt="...">
+    <strong class="me-auto">Juan Pablo Dufourg</strong>
+    <small>Ahora</small>
+  </div>
+  <div class="toast-body">
+    Ayudame a mejorar enviandome tu sugerencia.
+  </div>
+  <div class="mt-2 pt-2 border-top">
+    <button type="button" class="btn btn-primary btn-sm" id="botonEnviarMensaje" data-bs-dismiss="toast">Enviar mensaje</button>
+    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Cerrar</button>
+  </div>
+</div>
+</div>
+
 
       <script src="js/bootstrap.min.js"></script>
       <script src="js/functions.js"></script>
-
+      <script src="https://kit.fontawesome.com/554351da3d.js" crossorigin="anonymous"></script>
     </body>
 
 <footer>
- <h4><ul>Sigueme tambien en:</ul></h4>
-      <li>LinkedIn:</li>
-      <li>Facebook:</li>
-</footer>
+  <div class="row">
+    <div class="columnaFooter col-6">
+
+    </div>
+
+    <div class="columnaFooter col-6">
+      <h4><ul>Sigueme tambien en:</ul></h4>
+        <li><i class="fa-brands fa-linkedin"></i>LinkedIn:</li>
+        <li><i class="fa-brands fa-facebook"></i>Facebook:</li>
+    </div>
+  </div>
+ <!--
+ -->
+    </footer>
 </html>

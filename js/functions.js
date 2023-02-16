@@ -17,10 +17,30 @@ function generar_color_aleatorio(){
     return color_aleatorio;
  };
 
+ function moverseA(idDelElemento) {
+    location.hash = "#" + idDelElemento.id;
+};
+
 //boton cambiar de color de fondo a uno aleatorio.
 document.getElementById("botonColorDeFondo").addEventListener("click", function(){
     document.getElementById("contenidoCv").style.backgroundColor = generar_color_aleatorio();
     console.log("cambiamos de color el fondo");
+});
+
+//USO DE TOASTS BOOTSTRAP 5
+
+document.getElementById("botonMeGusta").addEventListener("click", function(){
+    var myToast = bootstrap.Toast.getOrCreateInstance(meGustaToast);
+    myToast.show();
+});
+
+document.getElementById("botonNoMeGusta").addEventListener("click", function(){
+    var myToast1 = bootstrap.Toast.getOrCreateInstance(noMeGustaToast);
+    myToast1.show();
+});
+
+document.getElementById("botonEnviarMensaje").addEventListener("click", function(){
+    moverseA(scrollspyContactame);
 });
 
 
