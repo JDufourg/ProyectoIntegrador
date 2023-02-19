@@ -41,22 +41,30 @@
 <div>
     <div class="row">
       <!-- Barra lateral con informacion personal-->
-        <div class="barraLateral col-3" id="barraLateral">
+        <div class="barraLateral col-3">
+
             <img  src="https://randomuser.me/api/portraits/men/96.jpg" class="fotoPerfil img-thumbnail" alt="Foto de perfil">
+           
             <div class="barraLateralContenido" id="contenidoBarraLateral">
-              <ul>Datos personales</ul>
-              <li>Nombre</li>
-              <li>E-mail</li>
-              <li>cumpleaños</li>
-              <li>Direccion</li>
               
-              <button type="button" id="botonColorDeFondo"><i class="fa-solid fa-wand-magic-sparkles"></i> Cambiar color de fondo</button>
-              <p>¿Te gusta el sitio?</p>
-              <button type="button" id="botonMeGusta"><i class="fa-regular fa-thumbs-up"></i></button>
-              <button type="button" id="botonNoMeGusta"><i class="fa-regular fa-thumbs-down"></i></button>
+              <div class="container">
+              <ul class="list-group"></ul>
+            
+              <li class="list-group-item">Nombre: Juan Pablo Dufourg</li>
+              <li class="list-group-item">E-mail: jdufourg09@gmail.com</li>
+              <li class="list-group-item">Fecha de nacimiento: 28/07/1996</li>
+              <li class="list-group-item">Localidad: Puerto Deseado/ Santa Cruz/ Argentina</li>
             </div>
+
+              <div>
+                <button type="button" id="botonColorDeFondo" class="btn btn-primary"><i class="fa-solid fa-wand-magic-sparkles"></i> Cambiar color de fondo</button>
+                <p>¿Te gusta el sitio?</p>
+                <button type="button" id="botonMeGusta" class="btn btn-primary"><i class="fa-regular fa-thumbs-up"></i></button>
+                <button type="button" id="botonNoMeGusta" class="btn btn-primary"><i class="fa-regular fa-thumbs-down" ></i></button>
+            </div>
+
         </div>
-        
+      </div>
          <!--TEXTO-->
         <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="contenido col-9" class="scrollspy-example" tabindex="0"  id="contenidoCv">
           <h4 id="scrollspyPresentacion">Presentación</h4>
@@ -110,7 +118,7 @@
                  <textarea name="user_message" class="form-control" id="msg" cols="50" rows="8" placeholder="Escriba su mensaje." required></textarea>
              </li>
              <li class="button">
-                 <button type="submit" class="btn btn-outline-dark">Enviar</button>
+                 <button type="submit" class="btn btn-primary">Enviar</button>
              </li>
             </ul> 
          </form>
@@ -119,7 +127,7 @@
 </div>
 
  <!--TOASTS-->
-<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
  <div class="toast" id="meGustaToast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
     <img src="..." class="rounded me-2" alt="...">
@@ -133,7 +141,7 @@
 </div>
 </div>
 
-<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
 <div class="toast" id="noMeGustaToast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
     <img src="..." class="rounded me-2" alt="...">
@@ -159,14 +167,24 @@
 <footer>
   <div class="row">
     <div class="columnaFooter col-6">
-
+      <img  src="https://randomuser.me/api/portraits/men/96.jpg" class="fotoFooter contenidoFooter img-thumbnail" alt="Foto de perfil">
+    <div>
+      <ul>
+      <li>Juan Pablo Dufourg.</li>
+      <li>Desarrollador Front-end.</li>
+    </ul>
     </div>
+  </div>
 
     <div class="columnaFooter col-6">
-      <h4><ul>Sigueme tambien en:</ul></h4>
+      
+      <div>
+      <ul>Sigueme tambien en:</ul>
         <li><i class="fa-brands fa-linkedin"></i>LinkedIn:</li>
         <li><i class="fa-brands fa-facebook"></i>Facebook:</li>
     </div>
+
+  </div>
   </div>
  <!--
  -->

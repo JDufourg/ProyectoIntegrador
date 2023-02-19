@@ -15,12 +15,20 @@
 .fotoPerfil{
   max-width: 100%;
   border-radius: 50%;
+}
 
+.fotoFooter{
+  max-width: 100%;
+  border-radius: 50%;
 }
 
 .barraLateral{
-  background-color:#73b8bf ;
+  background-color:rgba(0, 0, 0, 0.075) ;
   padding-top: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: block;
+  justify-content: center;
 }
 
 h4{
@@ -28,7 +36,19 @@ h4{
 }
 
 footer{
-    background-color: aquamarine;
+    background-image:url("footer.jpg");
+}
+
+.container{
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.columnaFooter{
+  display: flex inline;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-brand{
@@ -37,7 +57,7 @@ footer{
 }
 
 .contenido{
-  background-color:azure; 
+  background-color: #fff5e2  ; 
 }
 
 /*Media query para dispositivos medianos en adelante*/
@@ -56,9 +76,10 @@ footer{
   .col-12 {width: 100%;}
   
   .fotoPerfil{
-    width: 1500px;
+    width: 250px;
   }
 }
+
 
 
 
